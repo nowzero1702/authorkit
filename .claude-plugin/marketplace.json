@@ -1,0 +1,48 @@
+{
+  "name": "authorkit",
+  "owner": {
+    "name": "Nowzero",
+    "url": "https://github.com/Nowzero"
+  },
+  "metadata": {
+    "description": "Book authoring workflow skills for Claude Code. Systematize reference analysis, manuscript proofreading, diagram creation, style verification, and structure reorganization.",
+    "version": "1.0.0",
+    "license": "Apache-2.0"
+  },
+  "plugins": [
+    {
+      "name": "authorkit",
+      "description": "Book authoring workflow skills (English). init(setup), analyze(reference/manuscript analysis), compare(cross-reference), draft(proofreading), diagram(text block diagrams), review(verification), restructure(reorganization).",
+      "source": "./",
+      "strict": false,
+      "keywords": ["book", "authoring", "writing", "proofreading", "textbook", "publishing"],
+      "category": "productivity",
+      "skills": [
+        "./skills/init",
+        "./skills/analyze",
+        "./skills/compare",
+        "./skills/draft",
+        "./skills/diagram",
+        "./skills/review",
+        "./skills/restructure"
+      ]
+    },
+    {
+      "name": "authorkit-ko",
+      "description": "책 집필 워크플로우 스킬 (한국어). init(초기 설정), analyze(레퍼런스/원고 분석), compare(대조), draft(퇴고), diagram(도해 제작), review(검증), restructure(구조 재배치)를 지원합니다.",
+      "source": "./",
+      "strict": false,
+      "keywords": ["book", "authoring", "writing", "korean", "집필", "퇴고", "교재"],
+      "category": "productivity",
+      "skills": [
+        "./skills-ko/init",
+        "./skills-ko/analyze",
+        "./skills-ko/compare",
+        "./skills-ko/draft",
+        "./skills-ko/diagram",
+        "./skills-ko/review",
+        "./skills-ko/restructure"
+      ]
+    }
+  ]
+}
