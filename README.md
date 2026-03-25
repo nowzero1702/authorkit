@@ -328,6 +328,8 @@ Run `/authorkit.restructure apply` to execute.
        ↓
 /authorkit.compare       Compare reference ↔ manuscript
        ↓
+/authorkit.juice       Juice files into clean markdown (token savings)
+       ↓
 /authorkit.draft         Write/proofread sections (old → new)
        ↓
 /authorkit.diagram       Create text block diagrams

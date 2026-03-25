@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "authorkit",
-      "description": "Book authoring workflow skills (English). init(setup), analyze(reference/manuscript analysis), compare(cross-reference), draft(proofreading), diagram(text block diagrams), review(verification), restructure(reorganization).",
+      "description": "Book authoring workflow skills (English). init(setup), analyze(analysis), compare(cross-reference), juice(to markdown), draft(proofreading), diagram(text block diagrams), review(verification), restructure(reorganization).",
       "source": "./",
       "strict": false,
       "keywords": ["book", "authoring", "writing", "proofreading", "textbook", "publishing"],
@@ -21,6 +21,7 @@
         "./skills/init",
         "./skills/analyze",
         "./skills/compare",
+        "./skills/juice",
         "./skills/draft",
         "./skills/diagram",
         "./skills/review",
@@ -29,7 +30,7 @@
     },
     {
       "name": "authorkit-ko",
-      "description": "책 집필 워크플로우 스킬 (한국어). init(초기 설정), analyze(레퍼런스/원고 분석), compare(대조), draft(퇴고), diagram(도해 제작), review(검증), restructure(구조 재배치)를 지원합니다.",
+      "description": "책 집필 워크플로우 스킬 (한국어). init(초기 설정), analyze(분석), compare(대조), juice(md 변환), draft(퇴고), diagram(도해 제작), review(검증), restructure(구조 재배치)를 지원합니다.",
       "source": "./",
       "strict": false,
       "keywords": ["book", "authoring", "writing", "korean", "집필", "퇴고", "교재"],
@@ -38,6 +39,7 @@
         "./skills-ko/init",
         "./skills-ko/analyze",
         "./skills-ko/compare",
+        "./skills-ko/juice",
         "./skills-ko/draft",
         "./skills-ko/diagram",
         "./skills-ko/review",
