@@ -17,7 +17,7 @@ authorkit/                              ← GitHub 저장소 루트
 ├── .claude-plugin/
 │   └── marketplace.json               ← 마켓플레이스 메타데이터 (필수)
 ├── README.md                          ← 프로젝트 소개 (필수)
-├── LICENSE                            ← Apache 2.0 (필수)
+├── LICENSE                            ← MIT (필수)
 ├── skills/                            ← 스킬 폴더 (필수)
 │   ├── init/
 │   │   └── SKILL.md
@@ -47,7 +47,7 @@ authorkit/                              ← GitHub 저장소 루트
 | `.claude-plugin/marketplace.json` | 마켓플레이스 메타데이터 | 없으면 마켓플레이스 인식 안 됨 |
 | `skills/[name]/SKILL.md` | 각 스킬의 지침 | name + description 프론트매터 필수 |
 | `README.md` | 프로젝트 소개 | 스킬 목록, 설치 방법, 사용법 |
-| `LICENSE` | 라이선스 | Apache 2.0 권장 |
+| `LICENSE` | 라이선스 | MIT 권장 |
 
 ### 선택 파일
 
@@ -75,7 +75,7 @@ authorkit/                              ← GitHub 저장소 루트
   "metadata": {
     "description": "마켓플레이스 설명",
     "version": "1.0.0",
-    "license": "Apache-2.0"
+    "license": "MIT"
   },
   "plugins": [
     {
@@ -391,7 +391,7 @@ GitHub에서 skills/ 폴더 다운로드
 - [ ] 모든 SKILL.md에 `name`과 `description` 프론트매터 존재
 - [ ] `description`에 트리거 조건 포함
 - [ ] README.md 작성 (설치 방법, 스킬 목록, 사용법)
-- [ ] LICENSE 파일 포함 (Apache 2.0)
+- [ ] LICENSE 파일 포함 (MIT)
 - [ ] marketplace.json의 skills 경로가 실제 폴더와 일치
 
 ### 품질 권장 사항
@@ -411,7 +411,7 @@ GitHub에서 skills/ 폴더 다운로드
 | SKILL.md 7개 (init~restructure) | ✅ |
 | marketplace.json | ✅ |
 | README.md | ✅ |
-| LICENSE (Apache 2.0) | ✅ |
+| LICENSE (MIT) | ✅ |
 | templates/ 4개 | ✅ |
 | GitHub 저장소 | ⬜ 생성 필요 |
 | 실사용 테스트 | ⬜ |
