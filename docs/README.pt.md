@@ -22,19 +22,18 @@ Sistematize as tarefas repetitivas da escrita de livros: análise de referência
 ## Instalação
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-Para a versão em coreano:
+Para a versão em inglês:
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## Início rápido
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 Um arquivo md com questionário será gerado. Preencha as respostas no seu IDE e execute o comando novamente para concluir a configuração.
@@ -48,30 +47,30 @@ Um arquivo md com questionário será gerado. Preencha as respostas no seu IDE e
 ## Fluxo de trabalho
 
 ```
-/authorkit.init          Configurar o projeto
+/authorkit-init          Configurar o projeto
        ↓
-/authorkit.analyze       Analisar referências e manuscrito
+/authorkit-analyze       Analisar referências e manuscrito
        ↓
-/authorkit.compare       Comparar referências ↔ manuscrito
+/authorkit-compare       Comparar referências ↔ manuscrito
        ↓
-/authorkit.juice         Converter arquivos para Markdown (economia de tokens)
+/authorkit-juice         Converter arquivos para Markdown (economia de tokens)
        ↓
-/authorkit.draft         Redigir/revisar seções (antigo → novo)
+/authorkit-draft         Redigir/revisar seções (antigo → novo)
        ↓
-/authorkit.diagram       Criar diagramas de blocos de texto
+/authorkit-diagram       Criar diagramas de blocos de texto
        ↓
-/authorkit.review        Verificar estilo, terminologia, referências cruzadas
+/authorkit-review        Verificar estilo, terminologia, referências cruzadas
        ↓
-/authorkit.restructure   Reorganizar a ordem dos capítulos/seções
+/authorkit-restructure   Reorganizar a ordem dos capítulos/seções
 ```
 
 ## Versões de idioma
 
 | Plugin | Idioma | Instalação |
 |--------|--------|------------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
 
 ## Licença
 
-Apache 2.0
+MIT

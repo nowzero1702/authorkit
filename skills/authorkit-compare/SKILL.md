@@ -9,7 +9,7 @@ Compares references and manuscript to classify content, map figures, and verify 
 
 ## Prerequisites
 
-`/authorkit.analyze` must have been run on both references and manuscript.
+`/authorkit-analyze` must have been run on both references and manuscript.
 
 ## Tasks Performed
 

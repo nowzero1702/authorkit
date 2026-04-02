@@ -22,19 +22,18 @@
 ## इंस्टॉलेशन
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-कोरियाई संस्करण के लिए:
+अंग्रेज़ी संस्करण के लिए:
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## त्वरित शुरुआत
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 एक प्रश्नावली md फ़ाइल जनरेट होगी। अपनी IDE में उत्तर भरें, फिर सेटअप पूरा करने के लिए कमांड दोबारा चलाएँ।
@@ -48,30 +47,30 @@
 ## वर्कफ़्लो
 
 ```
-/authorkit.init          प्रोजेक्ट सेटअप करें
+/authorkit-init          प्रोजेक्ट सेटअप करें
        ↓
-/authorkit.analyze       संदर्भ और पांडुलिपि का विश्लेषण करें
+/authorkit-analyze       संदर्भ और पांडुलिपि का विश्लेषण करें
        ↓
-/authorkit.compare       संदर्भ ↔ पांडुलिपि की तुलना करें
+/authorkit-compare       संदर्भ ↔ पांडुलिपि की तुलना करें
        ↓
-/authorkit.juice         फ़ाइलों को Markdown में बदलें (टोकन बचत)
+/authorkit-juice         फ़ाइलों को Markdown में बदलें (टोकन बचत)
        ↓
-/authorkit.draft         खंड लिखें/प्रूफ़रीड करें (पुराना → नया)
+/authorkit-draft         खंड लिखें/प्रूफ़रीड करें (पुराना → नया)
        ↓
-/authorkit.diagram       टेक्स्ट ब्लॉक आरेख बनाएँ
+/authorkit-diagram       टेक्स्ट ब्लॉक आरेख बनाएँ
        ↓
-/authorkit.review        शैली, शब्दावली, क्रॉस-रेफ़रेंस सत्यापित करें
+/authorkit-review        शैली, शब्दावली, क्रॉस-रेफ़रेंस सत्यापित करें
        ↓
-/authorkit.restructure   अध्याय/खंड क्रम पुनर्गठित करें
+/authorkit-restructure   अध्याय/खंड क्रम पुनर्गठित करें
 ```
 
 ## भाषा संस्करण
 
 | Plugin | भाषा | इंस्टॉल |
 |--------|------|---------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
 
 ## लाइसेंस
 
-Apache 2.0
+MIT

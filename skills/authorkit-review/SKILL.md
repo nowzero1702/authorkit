@@ -34,6 +34,6 @@ Verifies manuscript against constitution and glossary standards.
 ## Output
 
 3-severity-level (high/medium/low) comprehensive report.
-Auto-fixable items are flagged with `/authorkit.draft [section] formatting` suggestion.
+Auto-fixable items are flagged with `/authorkit-draft [section] formatting` suggestion.
 
 Reports saved to `authorkit/reviews/review-[DATE].md`

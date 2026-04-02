@@ -16,19 +16,24 @@ Whether you're writing a university textbook, a practical how-to guide, or trans
 ## Installation
 
 ```
-/plugin marketplace add nowzero1702/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-For Korean version:
+Default plugin is **Korean**. For English version:
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit authorkit-en
+```
+
+## Update
+
+```
+/install nowzero1702/authorkit --upgrade
 ```
 
 ## Quick Start
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 A questionnaire md file is generated. Fill in your answers in your IDE, then run the command again.
@@ -37,7 +42,7 @@ A questionnaire md file is generated. Fill in your answers in your IDE, then run
 
 ## Skills & Examples
 
-### `/authorkit.init` — Project Initialization
+### `/authorkit-init` — Project Initialization
 
 Sets up your authoring project by generating a questionnaire md file.
 
@@ -64,7 +69,7 @@ Sets up your authoring project by generating a questionnaire md file.
 
 ---
 
-### `/authorkit.analyze` — Reference/Manuscript Analysis
+### `/authorkit-analyze` — Reference/Manuscript Analysis
 
 Extracts structure, figures, key concepts, and issues from any supported file.
 
@@ -105,7 +110,7 @@ Extracts structure, figures, key concepts, and issues from any supported file.
 
 ---
 
-### `/authorkit.compare` — Reference ↔ Manuscript Comparison
+### `/authorkit-compare` — Reference ↔ Manuscript Comparison
 
 Compares your manuscript against references to decide what to adopt, skip, or create originally.
 
@@ -147,7 +152,7 @@ Compares your manuscript against references to decide what to adopt, skip, or cr
 
 ---
 
-### `/authorkit.draft` — Section-Level Drafting/Proofreading
+### `/authorkit-draft` — Section-Level Drafting/Proofreading
 
 Extracts a section as `old.md`, rewrites/proofreads it as `new.md`.
 
@@ -190,7 +195,7 @@ New, Ready, Running, Waiting, Terminated 가 있습니다...
 
 ---
 
-### `/authorkit.juice` — Juice into Markdown
+### `/authorkit-juice` — Juice into Markdown
 
 Converts reference or manuscript files to clean markdown with embedded images, dramatically reducing token consumption. Enhanced with AI-powered extraction features inspired by [opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf).
 
@@ -237,7 +242,7 @@ conversion-log.md  ← Metadata: tables, formulas, OCR pages, processing stats
 
 ---
 
-### `/authorkit.diagram` — Text Block Diagram Creation
+### `/authorkit-diagram` — Text Block Diagram Creation
 
 Generates text block diagrams in markdown code blocks.
 
@@ -273,7 +278,7 @@ Generates text block diagrams in markdown code blocks.
 
 ---
 
-### `/authorkit.review` — Style/Terminology/Structure Verification
+### `/authorkit-review` — Style/Terminology/Structure Verification
 
 Verifies your manuscript against constitution and glossary rules.
 
@@ -306,14 +311,14 @@ Verifies your manuscript against constitution and glossary rules.
 | 3-2 "앞서 배운 스케줄링" | Prior section | Not yet taught | ✗ |
 
 ## Auto-fixable
-The following can be fixed with `/authorkit.draft 3-1 formatting`:
+The following can be fixed with `/authorkit-draft 3-1 formatting`:
 - 5 spacing issues
 - 3 terminology format issues
 ```
 
 ---
 
-### `/authorkit.restructure` — Structure Reorganization
+### `/authorkit-restructure` — Structure Reorganization
 
 Analyzes section ordering and suggests restructuring based on prerequisite dependencies.
 
@@ -350,7 +355,7 @@ Analyzes section ordering and suggests restructuring based on prerequisite depen
 
 Impact: 4 cross-references need updating.
 
-Run `/authorkit.restructure apply` to execute.
+Run `/authorkit-restructure apply` to execute.
 ```
 
 ---
@@ -369,29 +374,29 @@ Run `/authorkit.restructure apply` to execute.
 ## Workflow
 
 ```
-/authorkit.init          Set up project (questionnaire → constitution → glossary)
+/authorkit-init          Set up project (questionnaire → constitution → glossary)
        ↓
-/authorkit.analyze       Analyze references and manuscript
+/authorkit-analyze       Analyze references and manuscript
        ↓
-/authorkit.compare       Compare reference ↔ manuscript
+/authorkit-compare       Compare reference ↔ manuscript
        ↓
-/authorkit.juice       Juice files into clean markdown (token savings)
+/authorkit-juice       Juice files into clean markdown (token savings)
        ↓
-/authorkit.draft         Write/proofread sections (old → new)
+/authorkit-draft         Write/proofread sections (old → new)
        ↓
-/authorkit.diagram       Create text block diagrams
+/authorkit-diagram       Create text block diagrams
        ↓
-/authorkit.review        Verify style, terminology, cross-references
+/authorkit-review        Verify style, terminology, cross-references
        ↓
-/authorkit.restructure   Reorganize chapter/section order
+/authorkit-restructure   Reorganize chapter/section order
 ```
 
 ## Language Versions
 
 | Plugin | Language | Install |
 |--------|----------|---------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit authorkit-en` |
 
 ## License
 

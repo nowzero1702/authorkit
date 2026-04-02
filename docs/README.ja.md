@@ -22,19 +22,18 @@
 ## インストール
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-韓国語版：
+英語版：
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## クイックスタート
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 アンケート md ファイルが生成されます。IDE で回答を記入した後、再度コマンドを実行するとセットアップが完了します。
@@ -48,30 +47,30 @@
 ## ワークフロー
 
 ```
-/authorkit.init          プロジェクトをセットアップ
+/authorkit-init          プロジェクトをセットアップ
        ↓
-/authorkit.analyze       参考文献と原稿を分析
+/authorkit-analyze       参考文献と原稿を分析
        ↓
-/authorkit.compare       参考文献 ↔ 原稿を比較
+/authorkit-compare       参考文献 ↔ 原稿を比較
        ↓
-/authorkit.juice         ファイルをMarkdownに変換（トークン節約）
+/authorkit-juice         ファイルをMarkdownに変換（トークン節約）
        ↓
-/authorkit.draft         セクションを執筆・校正（旧 → 新）
+/authorkit-draft         セクションを執筆・校正（旧 → 新）
        ↓
-/authorkit.diagram       テキストブロック図を作成
+/authorkit-diagram       テキストブロック図を作成
        ↓
-/authorkit.review        文体・用語・相互参照を検証
+/authorkit-review        文体・用語・相互参照を検証
        ↓
-/authorkit.restructure   章・セクションの順序を再編成
+/authorkit-restructure   章・セクションの順序を再編成
 ```
 
 ## 言語バージョン
 
 | Plugin | 言語 | インストール |
 |--------|------|-------------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
 
 ## ライセンス
 
-Apache 2.0
+MIT

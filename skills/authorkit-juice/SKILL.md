@@ -631,10 +631,10 @@ to detect chapter boundaries, then extracts the specified range.
 After conversion, other authorkit skills automatically prefer md files:
 
 ```
-/authorkit.juice ref         <- Convert reference to md
-/authorkit.analyze ref         <- Now reads from converted/ref-001/*.md (fast!)
-/authorkit.compare ch3         <- Reads md instead of PDF (low tokens!)
-/authorkit.draft 3-1           <- References md for content (efficient!)
+/authorkit-juice ref         <- Convert reference to md
+/authorkit-analyze ref         <- Now reads from converted/ref-001/*.md (fast!)
+/authorkit-compare ch3         <- Reads md instead of PDF (low tokens!)
+/authorkit-draft 3-1           <- References md for content (efficient!)
 ```
 
 The `analyze` skill checks for converted md files first.

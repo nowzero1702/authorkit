@@ -44,7 +44,7 @@ If the questionnaire file exists and answers are filled in:
 # authorkit Setup Questionnaire
 
 > Fill in your answers below each `> Answer:` line.
-> After completing, run `/authorkit.init` again to finalize setup.
+> After completing, run `/authorkit-init` again to finalize setup.
 
 ## 1. Work Type
 - [ ] Write a new book based on references

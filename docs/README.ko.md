@@ -22,19 +22,18 @@
 ## 설치
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit
 ```
 
 영어 버전:
 ```
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## 시작하기
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 질문지 md 파일이 생성됩니다. IDE에서 답변을 작성한 뒤 다시 실행하면 세팅 완료.
@@ -48,21 +47,21 @@
 ## 워크플로우
 
 ```
-/authorkit.init          프로젝트 설정
+/authorkit-init          프로젝트 설정
        ↓
-/authorkit.analyze       레퍼런스/원고 분석
+/authorkit-analyze       레퍼런스/원고 분석
        ↓
-/authorkit.compare       레퍼런스 ↔ 원고 대조
+/authorkit-compare       레퍼런스 ↔ 원고 대조
        ↓
-/authorkit.juice         파일을 마크다운으로 변환 (토큰 절약)
+/authorkit-juice         파일을 마크다운으로 변환 (토큰 절약)
        ↓
-/authorkit.draft         절 단위 집필/퇴고 (old → new)
+/authorkit-draft         절 단위 집필/퇴고 (old → new)
        ↓
-/authorkit.diagram       텍스트 블록도 제작
+/authorkit-diagram       텍스트 블록도 제작
        ↓
-/authorkit.review        문체/용어/상호참조 검증
+/authorkit-review        문체/용어/상호참조 검증
        ↓
-/authorkit.restructure   챕터/절 순서 재배치
+/authorkit-restructure   챕터/절 순서 재배치
 ```
 
 ## juice 주요 기능

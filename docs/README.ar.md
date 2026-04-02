@@ -22,19 +22,18 @@
 ## التثبيت
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-للنسخة الكورية:
+للنسخة الإنجليزية:
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## البدء السريع
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 سيتم إنشاء ملف md يحتوي على استبيان. املأ إجاباتك في بيئة التطوير الخاصة بك، ثم شغّل الأمر مرة أخرى لإتمام الإعداد.
@@ -48,30 +47,30 @@
 ## سير العمل
 
 ```
-/authorkit.init          إعداد المشروع
+/authorkit-init          إعداد المشروع
        ↓
-/authorkit.analyze       تحليل المراجع والمخطوطة
+/authorkit-analyze       تحليل المراجع والمخطوطة
        ↓
-/authorkit.compare       مقارنة المراجع ↔ المخطوطة
+/authorkit-compare       مقارنة المراجع ↔ المخطوطة
        ↓
-/authorkit.juice         تحويل الملفات إلى Markdown (توفير التوكنات)
+/authorkit-juice         تحويل الملفات إلى Markdown (توفير التوكنات)
        ↓
-/authorkit.draft         كتابة/تدقيق الأقسام (قديم → جديد)
+/authorkit-draft         كتابة/تدقيق الأقسام (قديم → جديد)
        ↓
-/authorkit.diagram       إنشاء مخططات الكتل النصية
+/authorkit-diagram       إنشاء مخططات الكتل النصية
        ↓
-/authorkit.review        التحقق من الأسلوب والمصطلحات والإحالات المرجعية
+/authorkit-review        التحقق من الأسلوب والمصطلحات والإحالات المرجعية
        ↓
-/authorkit.restructure   إعادة تنظيم ترتيب الفصول/الأقسام
+/authorkit-restructure   إعادة تنظيم ترتيب الفصول/الأقسام
 ```
 
 ## الإصدارات اللغوية
 
 | Plugin | اللغة | التثبيت |
 |--------|-------|---------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
 
 ## الترخيص
 
-Apache 2.0
+MIT

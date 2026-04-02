@@ -22,19 +22,18 @@
 ## Установка
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-Для корейской версии:
+Для английской версии:
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## Быстрый старт
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 Будет сгенерирован md-файл с анкетой. Заполните ответы в вашей IDE, затем запустите команду повторно для завершения настройки.
@@ -48,30 +47,30 @@
 ## Рабочий процесс
 
 ```
-/authorkit.init          Настроить проект
+/authorkit-init          Настроить проект
        ↓
-/authorkit.analyze       Проанализировать материалы и рукопись
+/authorkit-analyze       Проанализировать материалы и рукопись
        ↓
-/authorkit.compare       Сравнить материалы ↔ рукопись
+/authorkit-compare       Сравнить материалы ↔ рукопись
        ↓
-/authorkit.juice         Конвертировать файлы в Markdown (экономия токенов)
+/authorkit-juice         Конвертировать файлы в Markdown (экономия токенов)
        ↓
-/authorkit.draft         Написать/откорректировать разделы (старое → новое)
+/authorkit-draft         Написать/откорректировать разделы (старое → новое)
        ↓
-/authorkit.diagram       Создать текстовые блок-схемы
+/authorkit-diagram       Создать текстовые блок-схемы
        ↓
-/authorkit.review        Проверить стиль, терминологию, перекрёстные ссылки
+/authorkit-review        Проверить стиль, терминологию, перекрёстные ссылки
        ↓
-/authorkit.restructure   Реорганизовать порядок глав/разделов
+/authorkit-restructure   Реорганизовать порядок глав/разделов
 ```
 
 ## Языковые версии
 
 | Plugin | Язык | Установка |
 |--------|------|-----------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
 
 ## Лицензия
 
-Apache 2.0
+MIT

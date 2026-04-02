@@ -625,10 +625,10 @@ authorkit/converted/
 변환 후 다른 authorkit 스킬은 자동으로 md 파일을 우선 사용합니다.
 
 ```
-/authorkit.juice ref         ← 레퍼런스를 md로 변환
-/authorkit.analyze ref         ← converted/ref-001/*.md에서 읽기 (빠름)
-/authorkit.compare ch3         ← PDF 대신 md에서 읽기 (토큰 절약)
-/authorkit.draft 3-1           ← md에서 내용 참조 (효율적)
+/authorkit-juice ref         ← 레퍼런스를 md로 변환
+/authorkit-analyze ref         ← converted/ref-001/*.md에서 읽기 (빠름)
+/authorkit-compare ch3         ← PDF 대신 md에서 읽기 (토큰 절약)
+/authorkit-draft 3-1           ← md에서 내용 참조 (효율적)
 ```
 
 `analyze` 스킬은 변환된 md 파일이 있는지 먼저 확인합니다.

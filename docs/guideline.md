@@ -218,7 +218,7 @@ cd authorkit-skills
 git init
 git add .
 git commit -m "Initial release: authorkit v1.0.0"
-git remote add origin https://github.com/Nowzero/authorkit.git
+git remote add origin https://github.com/Nowzero/authorkit-git
 git branch -M main
 git push -u origin main
 ```
@@ -242,7 +242,7 @@ git push -u origin main
 
 방법 1 — 직접 설치:
 ```
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
 방법 2 — 브라우저에서:
@@ -332,7 +332,7 @@ Claude Code: GitHub API로 저장소 조회
 ### `/plugin install` 프로세스
 
 ```
-사용자: /plugin install authorkit@authorkit
+사용자: /install nowzero1702/authorkit
          │
          ▼
 Claude Code: 마켓플레이스에서 플러그인 정보 조회
@@ -422,5 +422,5 @@ GitHub에서 skills/ 폴더 다운로드
 1. GitHub에 공개 저장소 생성
 2. `authorkit-skills/` 내용을 push
 3. `/plugin marketplace add [owner]/authorkit` 테스트
-4. `/plugin install authorkit@authorkit` 테스트
+4. `/install nowzero1702/authorkit` 테스트
 5. 실제 책 집필 프로젝트에서 각 스킬 테스트

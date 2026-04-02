@@ -22,19 +22,18 @@
 ## 安装
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-韩语版本：
+英语版本：
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## 快速开始
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 系统将生成一份问卷 md 文件。在 IDE 中填写答案后，再次运行该命令以完成设置。
@@ -48,30 +47,30 @@
 ## 工作流
 
 ```
-/authorkit.init          设置项目
+/authorkit-init          设置项目
        ↓
-/authorkit.analyze       分析参考文献和稿件
+/authorkit-analyze       分析参考文献和稿件
        ↓
-/authorkit.compare       对比参考文献 ↔ 稿件
+/authorkit-compare       对比参考文献 ↔ 稿件
        ↓
-/authorkit.juice         文件转换为 Markdown（节省 token）
+/authorkit-juice         文件转换为 Markdown（节省 token）
        ↓
-/authorkit.draft         撰写/校对章节（旧 → 新）
+/authorkit-draft         撰写/校对章节（旧 → 新）
        ↓
-/authorkit.diagram       创建文本框图
+/authorkit-diagram       创建文本框图
        ↓
-/authorkit.review        验证风格、术语、交叉引用
+/authorkit-review        验证风格、术语、交叉引用
        ↓
-/authorkit.restructure   重组章节顺序
+/authorkit-restructure   重组章节顺序
 ```
 
 ## 语言版本
 
 | Plugin | 语言 | 安装 |
 |--------|------|------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
 
 ## 许可证
 
-Apache 2.0
+MIT

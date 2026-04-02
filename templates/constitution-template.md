@@ -81,6 +81,6 @@
 ## Governance
 
 - 이 원칙은 모든 챕터/절 집필에 적용됩니다.
-- 수정이 필요하면 이 파일을 직접 수정하고, `/authorkit.review` 실행 시 반영됩니다.
+- 수정이 필요하면 이 파일을 직접 수정하고, `/authorkit-review` 실행 시 반영됩니다.
 
 **Version**: 1.0.0 | **Last Updated**: [DATE]

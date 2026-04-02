@@ -34,6 +34,6 @@ constitution과 glossary를 기준으로 원고를 검증합니다.
 ## 산출물
 
 심각도 3단계(높음/중간/낮음) 종합 리포트를 출력합니다.
-자동 수정 가능한 항목은 `/authorkit.draft [절번호] 서식`으로 수정할 수 있도록 안내합니다.
+자동 수정 가능한 항목은 `/authorkit-draft [절번호] 서식`으로 수정할 수 있도록 안내합니다.
 
 리포트는 `authorkit/reviews/review-[DATE].md`에 저장됩니다.

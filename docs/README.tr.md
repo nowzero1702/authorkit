@@ -22,19 +22,18 @@ Kitap yazımındaki tekrarlayan görevleri sistemleştirin: kaynak analizi, el y
 ## Kurulum
 
 ```
-/plugin marketplace add Nowzero/authorkit
-/plugin install authorkit@authorkit
+/install nowzero1702/authorkit
 ```
 
-Korece sürüm için:
+İngilizce sürüm için:
 ```
-/plugin install authorkit-ko@authorkit
+/install nowzero1702/authorkit-en
 ```
 
 ## Hızlı Başlangıç
 
 ```
-/authorkit.init
+/authorkit-init
 ```
 
 Bir anket md dosyası oluşturulacaktır. IDE'nizde yanıtları doldurun, ardından kurulumu tamamlamak için komutu tekrar çalıştırın.
@@ -48,30 +47,30 @@ Bir anket md dosyası oluşturulacaktır. IDE'nizde yanıtları doldurun, ardın
 ## İş Akışı
 
 ```
-/authorkit.init          Projeyi kur
+/authorkit-init          Projeyi kur
        ↓
-/authorkit.analyze       Kaynakları ve el yazmasını analiz et
+/authorkit-analyze       Kaynakları ve el yazmasını analiz et
        ↓
-/authorkit.compare       Kaynak ↔ el yazmasını karşılaştır
+/authorkit-compare       Kaynak ↔ el yazmasını karşılaştır
        ↓
-/authorkit.juice         Dosyaları Markdown'a dönüştür (token tasarrufu)
+/authorkit-juice         Dosyaları Markdown'a dönüştür (token tasarrufu)
        ↓
-/authorkit.draft         Bölümleri yaz/düzelt (eski → yeni)
+/authorkit-draft         Bölümleri yaz/düzelt (eski → yeni)
        ↓
-/authorkit.diagram       Metin blok diyagramları oluştur
+/authorkit-diagram       Metin blok diyagramları oluştur
        ↓
-/authorkit.review        Üslup, terminoloji, çapraz referansları doğrula
+/authorkit-review        Üslup, terminoloji, çapraz referansları doğrula
        ↓
-/authorkit.restructure   Bölüm sırasını yeniden düzenle
+/authorkit-restructure   Bölüm sırasını yeniden düzenle
 ```
 
 ## Dil Sürümleri
 
 | Plugin | Dil | Kurulum |
 |--------|-----|---------|
-| `authorkit` | English | `/plugin install authorkit@authorkit` |
-| `authorkit-ko` | 한국어 | `/plugin install authorkit-ko@authorkit` |
+| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
+| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
 
 ## Lisans
 
-Apache 2.0
+MIT
