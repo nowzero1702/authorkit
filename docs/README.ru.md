@@ -22,12 +22,19 @@
 ## Установка
 
 ```
-/install nowzero1702/authorkit
+/plugin marketplace add nowzero1702/authorkit
+/plugin install authorkit@nowzero1702-authorkit
 ```
 
 Для английской версии:
 ```
-/install nowzero1702/authorkit-en
+/plugin install authorkit-en@nowzero1702-authorkit
+```
+
+Обновление:
+```
+/plugin marketplace update nowzero1702-authorkit
+/reload-plugins
 ```
 
 ## Быстрый старт
@@ -68,8 +75,8 @@
 
 | Plugin | Язык | Установка |
 |--------|------|-----------|
-| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
-| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
+| `authorkit` | 한국어 (default) | `/plugin marketplace add nowzero1702/authorkit` → `/plugin install authorkit@nowzero1702-authorkit` |
+| `authorkit-en` | English | `/plugin install authorkit-en@nowzero1702-authorkit` |
 
 ## Лицензия
 

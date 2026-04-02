@@ -22,12 +22,19 @@ Sistematiza las tareas repetitivas de la escritura de libros: análisis de refer
 ## Instalación
 
 ```
-/install nowzero1702/authorkit
+/plugin marketplace add nowzero1702/authorkit
+/plugin install authorkit@nowzero1702-authorkit
 ```
 
 Para la versión en inglés:
 ```
-/install nowzero1702/authorkit-en
+/plugin install authorkit-en@nowzero1702-authorkit
+```
+
+Actualización:
+```
+/plugin marketplace update nowzero1702-authorkit
+/reload-plugins
 ```
 
 ## Inicio rápido
@@ -68,8 +75,8 @@ Se generará un archivo md con un cuestionario. Completa las respuestas en tu ID
 
 | Plugin | Idioma | Instalación |
 |--------|--------|-------------|
-| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
-| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
+| `authorkit` | 한국어 (default) | `/plugin marketplace add nowzero1702/authorkit` → `/plugin install authorkit@nowzero1702-authorkit` |
+| `authorkit-en` | English | `/plugin install authorkit-en@nowzero1702-authorkit` |
 
 ## Licencia
 

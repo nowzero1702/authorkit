@@ -16,18 +16,20 @@ Whether you're writing a university textbook, a practical how-to guide, or trans
 ## Installation
 
 ```
-/install nowzero1702/authorkit
+/plugin marketplace add nowzero1702/authorkit
+/plugin install authorkit@nowzero1702-authorkit
 ```
 
 Default plugin is **Korean**. For English version:
 ```
-/install nowzero1702/authorkit authorkit-en
+/plugin install authorkit-en@nowzero1702-authorkit
 ```
 
 ## Update
 
 ```
-/install nowzero1702/authorkit --upgrade
+/plugin marketplace update nowzero1702-authorkit
+/reload-plugins
 ```
 
 ## Quick Start
@@ -395,8 +397,8 @@ Run `/authorkit-restructure apply` to execute.
 
 | Plugin | Language | Install |
 |--------|----------|---------|
-| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
-| `authorkit-en` | English | `/install nowzero1702/authorkit authorkit-en` |
+| `authorkit` | 한국어 (default) | `/plugin install authorkit@nowzero1702-authorkit` |
+| `authorkit-en` | English | `/plugin install authorkit-en@nowzero1702-authorkit` |
 
 ## License
 

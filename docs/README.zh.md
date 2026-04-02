@@ -22,12 +22,19 @@
 ## 安装
 
 ```
-/install nowzero1702/authorkit
+/plugin marketplace add nowzero1702/authorkit
+/plugin install authorkit@nowzero1702-authorkit
 ```
 
 英语版本：
 ```
-/install nowzero1702/authorkit-en
+/plugin install authorkit-en@nowzero1702-authorkit
+```
+
+更新：
+```
+/plugin marketplace update nowzero1702-authorkit
+/reload-plugins
 ```
 
 ## 快速开始
@@ -68,8 +75,8 @@
 
 | Plugin | 语言 | 安装 |
 |--------|------|------|
-| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
-| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
+| `authorkit` | 한국어 (default) | `/plugin marketplace add nowzero1702/authorkit` → `/plugin install authorkit@nowzero1702-authorkit` |
+| `authorkit-en` | English | `/plugin install authorkit-en@nowzero1702-authorkit` |
 
 ## 许可证
 

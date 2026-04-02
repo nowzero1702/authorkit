@@ -22,12 +22,19 @@ Systematisieren Sie die wiederkehrenden Aufgaben beim Schreiben von Büchern: Qu
 ## Installation
 
 ```
-/install nowzero1702/authorkit
+/plugin marketplace add nowzero1702/authorkit
+/plugin install authorkit@nowzero1702-authorkit
 ```
 
 Für die englische Version:
 ```
-/install nowzero1702/authorkit-en
+/plugin install authorkit-en@nowzero1702-authorkit
+```
+
+Aktualisierung:
+```
+/plugin marketplace update nowzero1702-authorkit
+/reload-plugins
 ```
 
 ## Schnellstart
@@ -68,8 +75,8 @@ Es wird eine Fragebogen-md-Datei generiert. Tragen Sie Ihre Antworten in Ihrer I
 
 | Plugin | Sprache | Installation |
 |--------|---------|-------------|
-| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
-| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
+| `authorkit` | 한국어 (default) | `/plugin marketplace add nowzero1702/authorkit` → `/plugin install authorkit@nowzero1702-authorkit` |
+| `authorkit-en` | English | `/plugin install authorkit-en@nowzero1702-authorkit` |
 
 ## Lizenz
 

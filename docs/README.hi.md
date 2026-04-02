@@ -22,12 +22,19 @@
 ## इंस्टॉलेशन
 
 ```
-/install nowzero1702/authorkit
+/plugin marketplace add nowzero1702/authorkit
+/plugin install authorkit@nowzero1702-authorkit
 ```
 
 अंग्रेज़ी संस्करण के लिए:
 ```
-/install nowzero1702/authorkit-en
+/plugin install authorkit-en@nowzero1702-authorkit
+```
+
+अपडेट:
+```
+/plugin marketplace update nowzero1702-authorkit
+/reload-plugins
 ```
 
 ## त्वरित शुरुआत
@@ -68,8 +75,8 @@
 
 | Plugin | भाषा | इंस्टॉल |
 |--------|------|---------|
-| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
-| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
+| `authorkit` | 한국어 (default) | `/plugin marketplace add nowzero1702/authorkit` → `/plugin install authorkit@nowzero1702-authorkit` |
+| `authorkit-en` | English | `/plugin install authorkit-en@nowzero1702-authorkit` |
 
 ## लाइसेंस
 

@@ -22,12 +22,19 @@ Kitap yazımındaki tekrarlayan görevleri sistemleştirin: kaynak analizi, el y
 ## Kurulum
 
 ```
-/install nowzero1702/authorkit
+/plugin marketplace add nowzero1702/authorkit
+/plugin install authorkit@nowzero1702-authorkit
 ```
 
 İngilizce sürüm için:
 ```
-/install nowzero1702/authorkit-en
+/plugin install authorkit-en@nowzero1702-authorkit
+```
+
+Güncelleme:
+```
+/plugin marketplace update nowzero1702-authorkit
+/reload-plugins
 ```
 
 ## Hızlı Başlangıç
@@ -68,8 +75,8 @@ Bir anket md dosyası oluşturulacaktır. IDE'nizde yanıtları doldurun, ardın
 
 | Plugin | Dil | Kurulum |
 |--------|-----|---------|
-| `authorkit` | 한국어 (default) | `/install nowzero1702/authorkit` |
-| `authorkit-en` | English | `/install nowzero1702/authorkit-en` |
+| `authorkit` | 한국어 (default) | `/plugin marketplace add nowzero1702/authorkit` → `/plugin install authorkit@nowzero1702-authorkit` |
+| `authorkit-en` | English | `/plugin install authorkit-en@nowzero1702-authorkit` |
 
 ## Lisans
 
