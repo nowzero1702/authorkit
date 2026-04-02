@@ -12,38 +12,38 @@
   "plugins": [
     {
       "name": "authorkit",
-      "description": "Book authoring workflow skills (English). init(setup), analyze(analysis), compare(cross-reference), juice(to markdown), draft(proofreading), diagram(text block diagrams), review(verification), restructure(reorganization).",
-      "source": "./",
-      "strict": false,
-      "keywords": ["book", "authoring", "writing", "proofreading", "textbook", "publishing"],
-      "category": "productivity",
-      "skills": [
-        "./skills/init",
-        "./skills/analyze",
-        "./skills/compare",
-        "./skills/juice",
-        "./skills/draft",
-        "./skills/diagram",
-        "./skills/review",
-        "./skills/restructure"
-      ]
-    },
-    {
-      "name": "authorkit-ko",
-      "description": "책 집필 워크플로우 스킬 (한국어). init(초기 설정), analyze(분석), compare(대조), juice(md 변환), draft(퇴고), diagram(도해 제작), review(검증), restructure(구조 재배치)를 지원합니다.",
+      "description": "책 집필 워크플로우 스킬 (한국어, 기본). authorkit-init(초기 설정), authorkit-analyze(분석), authorkit-compare(대조), authorkit-juice(md 변환), authorkit-draft(퇴고), authorkit-diagram(도해 제작), authorkit-review(검증), authorkit-restructure(구조 재배치)를 지원합니다.",
       "source": "./",
       "strict": false,
       "keywords": ["book", "authoring", "writing", "korean", "집필", "퇴고", "교재"],
       "category": "productivity",
       "skills": [
-        "./skills-ko/init",
-        "./skills-ko/analyze",
-        "./skills-ko/compare",
-        "./skills-ko/juice",
-        "./skills-ko/draft",
-        "./skills-ko/diagram",
-        "./skills-ko/review",
-        "./skills-ko/restructure"
+        "./skills-ko/authorkit-init",
+        "./skills-ko/authorkit-analyze",
+        "./skills-ko/authorkit-compare",
+        "./skills-ko/authorkit-juice",
+        "./skills-ko/authorkit-draft",
+        "./skills-ko/authorkit-diagram",
+        "./skills-ko/authorkit-review",
+        "./skills-ko/authorkit-restructure"
+      ]
+    },
+    {
+      "name": "authorkit-en",
+      "description": "Book authoring workflow skills (English). authorkit-init(setup), authorkit-analyze(analysis), authorkit-compare(cross-reference), authorkit-juice(to markdown), authorkit-draft(proofreading), authorkit-diagram(text block diagrams), authorkit-review(verification), authorkit-restructure(reorganization).",
+      "source": "./",
+      "strict": false,
+      "keywords": ["book", "authoring", "writing", "proofreading", "textbook", "publishing"],
+      "category": "productivity",
+      "skills": [
+        "./skills/authorkit-init",
+        "./skills/authorkit-analyze",
+        "./skills/authorkit-compare",
+        "./skills/authorkit-juice",
+        "./skills/authorkit-draft",
+        "./skills/authorkit-diagram",
+        "./skills/authorkit-review",
+        "./skills/authorkit-restructure"
       ]
     }
   ]

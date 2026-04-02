@@ -16,6 +16,7 @@
 | `draft` | 절 단위 집필/퇴고 (old → new) |
 | `diagram` | 텍스트 블록도 제작 |
 | `review` | 문체/용어/구조 검증 |
+| `juice` | 파일을 마크다운으로 변환 (OCR, 표 추출, 수식 LaTeX, 토큰 절약) |
 | `restructure` | 구조 재배치 |
 
 ## 설치
@@ -42,7 +43,7 @@
 
 - 레퍼런스: pdf, docx, txt, xlsx, hwpx
 - 원고: pdf, docx, txt, xlsx, hwpx, md
-- 출력: md (텍스트 블록도 포함)
+- 출력: md (텍스트 블록도 포함), json (바운딩 박스 포함 구조화 데이터)
 
 ## 워크플로우
 
@@ -53,6 +54,8 @@
        ↓
 /authorkit.compare       레퍼런스 ↔ 원고 대조
        ↓
+/authorkit.juice         파일을 마크다운으로 변환 (토큰 절약)
+       ↓
 /authorkit.draft         절 단위 집필/퇴고 (old → new)
        ↓
 /authorkit.diagram       텍스트 블록도 제작
@@ -61,6 +64,21 @@
        ↓
 /authorkit.restructure   챕터/절 순서 재배치
 ```
+
+## juice 주요 기능
+
+[opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf)를 참고하여 강화된 기능:
+
+| 기능 | 설명 |
+|------|------|
+| 하이브리드 처리 | 페이지별 자동 분류 — 단순 텍스트(로컬) vs 스캔/복잡 표(AI 백엔드) |
+| 읽기 순서 보정 | XY-Cut 알고리즘으로 다단 레이아웃 텍스트 순서 복원 |
+| 고급 표 추출 | 테두리 기반 + 클러스터 기반(테두리 없는 표) 이중 전략 |
+| OCR | 스캔 문서 자동 감지 및 텍스트 추출 (80개+ 언어) |
+| 수식 추출 | 수학 수식을 LaTeX로 변환 |
+| JSON 출력 | 바운딩 박스 + 시맨틱 타입 포함 구조화 데이터 |
+| 콘텐츠 안전 | 숨겨진 텍스트 감지, PII 제거 |
+| AI 이미지 설명 | 비전 모델로 캡션 없는 이미지에 alt 텍스트 자동 생성 |
 
 ## 라이선스
 

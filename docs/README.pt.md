@@ -13,6 +13,7 @@ Sistematize as tarefas repetitivas da escrita de livros: análise de referência
 | `init` | Inicialização do projeto (questionário md → configuração) |
 | `analyze` | Análise de referências e manuscrito |
 | `compare` | Comparação referências ↔ manuscrito |
+| `juice` | Conversão de arquivos para Markdown (OCR, extração de tabelas, fórmulas LaTeX, economia de tokens) |
 | `draft` | Redação/revisão por seções (antigo → novo) |
 | `diagram` | Criação de diagramas de blocos de texto |
 | `review` | Verificação de estilo, terminologia e estrutura |
@@ -42,7 +43,7 @@ Um arquivo md com questionário será gerado. Preencha as respostas no seu IDE e
 
 - Referências: pdf, docx, txt, xlsx, hwpx
 - Manuscritos: pdf, docx, txt, xlsx, hwpx, md
-- Saída: md (com diagramas de blocos de texto)
+- Saída: md (com diagramas de blocos de texto), json
 
 ## Fluxo de trabalho
 
@@ -52,6 +53,8 @@ Um arquivo md com questionário será gerado. Preencha as respostas no seu IDE e
 /authorkit.analyze       Analisar referências e manuscrito
        ↓
 /authorkit.compare       Comparar referências ↔ manuscrito
+       ↓
+/authorkit.juice         Converter arquivos para Markdown (economia de tokens)
        ↓
 /authorkit.draft         Redigir/revisar seções (antigo → novo)
        ↓

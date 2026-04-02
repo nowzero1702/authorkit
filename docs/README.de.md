@@ -13,6 +13,7 @@ Systematisieren Sie die wiederkehrenden Aufgaben beim Schreiben von Büchern: Qu
 | `init` | Projektinitialisierung (Fragebogen md → Einrichtung) |
 | `analyze` | Quellen-/Manuskriptanalyse |
 | `compare` | Quellen ↔ Manuskript-Vergleich |
+| `juice` | Dateien in Markdown konvertieren (OCR, Tabellenextraktion, Formeln als LaTeX, Token-Einsparung) |
 | `draft` | Abschnittsweises Verfassen/Korrekturlesen (alt → neu) |
 | `diagram` | Erstellung von Textblockdiagrammen |
 | `review` | Stil-/Terminologie-/Strukturprüfung |
@@ -42,7 +43,7 @@ Es wird eine Fragebogen-md-Datei generiert. Tragen Sie Ihre Antworten in Ihrer I
 
 - Quellen: pdf, docx, txt, xlsx, hwpx
 - Manuskripte: pdf, docx, txt, xlsx, hwpx, md
-- Ausgabe: md (mit Textblockdiagrammen)
+- Ausgabe: md (mit Textblockdiagrammen), json
 
 ## Workflow
 
@@ -52,6 +53,8 @@ Es wird eine Fragebogen-md-Datei generiert. Tragen Sie Ihre Antworten in Ihrer I
 /authorkit.analyze       Quellen und Manuskript analysieren
        ↓
 /authorkit.compare       Quellen ↔ Manuskript vergleichen
+       ↓
+/authorkit.juice         Dateien in Markdown konvertieren (Token-Einsparung)
        ↓
 /authorkit.draft         Abschnitte verfassen/korrigieren (alt → neu)
        ↓

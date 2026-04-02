@@ -13,6 +13,7 @@
 | `init` | プロジェクト初期化（アンケート md → セットアップ） |
 | `analyze` | 参考文献・原稿の分析 |
 | `compare` | 参考文献 ↔ 原稿の比較 |
+| `juice` | ファイルをMarkdownに変換（OCR、表抽出、数式LaTeX、トークン節約） |
 | `draft` | セクション単位の執筆・校正（旧 → 新） |
 | `diagram` | テキストブロック図の作成 |
 | `review` | 文体・用語・構成の検証 |
@@ -42,7 +43,7 @@
 
 - 参考文献：pdf、docx、txt、xlsx、hwpx
 - 原稿：pdf、docx、txt、xlsx、hwpx、md
-- 出力：md（テキストブロック図付き）
+- 出力：md（テキストブロック図付き）、json
 
 ## ワークフロー
 
@@ -52,6 +53,8 @@
 /authorkit.analyze       参考文献と原稿を分析
        ↓
 /authorkit.compare       参考文献 ↔ 原稿を比較
+       ↓
+/authorkit.juice         ファイルをMarkdownに変換（トークン節約）
        ↓
 /authorkit.draft         セクションを執筆・校正（旧 → 新）
        ↓

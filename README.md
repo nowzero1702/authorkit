@@ -190,6 +190,53 @@ New, Ready, Running, Waiting, Terminated 가 있습니다...
 
 ---
 
+### `/authorkit.juice` — Juice into Markdown
+
+Converts reference or manuscript files to clean markdown with embedded images, dramatically reducing token consumption. Enhanced with AI-powered extraction features inspired by [opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf).
+
+**You say:**
+> "Juice the reference PDF to markdown"
+
+**authorkit does:**
+1. **Page triage** — classifies each page (clean text → local, scanned → OCR, complex tables → AI)
+2. **Text extraction** — with reading order correction (XY-Cut algorithm) for multi-column layouts
+3. **Table extraction** — dual strategy: border-based (visible lines) + cluster-based (borderless tables)
+4. **Formula extraction** — math fonts and symbols converted to LaTeX (`$E=mc^2$`)
+5. **Image extraction** — with optional AI-generated alt text descriptions
+6. **Content safety** — hidden text detection (prompt injection defense), optional PII sanitization
+
+**Output** (`authorkit/converted/ref-001/`):
+```
+full.md            ← Complete converted file
+full.json          ← Structured JSON with bounding boxes (optional)
+ch01.md ~ ch12.md  ← Per-chapter files
+images/            ← Extracted images
+conversion-log.md  ← Metadata: tables, formulas, OCR pages, processing stats
+```
+
+**Options:**
+```
+"Juice with OCR — it's scanned"              → ocr: force
+"Extract borderless tables too"               → table_method: cluster
+"Output structured JSON with bounding boxes"  → format: json
+"Preserve math formulas as LaTeX"             → formula: on
+"Generate AI descriptions for figures"        → image_desc: on
+"Sanitize personal information"               → sanitize: on
+```
+
+| Option | Values | Default |
+|--------|--------|---------|
+| `format` | markdown, json, html, text | markdown |
+| `table_method` | auto, border, cluster | auto |
+| `reading_order` | auto, xycut, none | auto |
+| `ocr` | auto, force, off | auto |
+| `formula` | on, off | on |
+| `image_desc` | on, off | off |
+| `sanitize` | on, off | off |
+| `hidden_text` | warn, strip, off | warn |
+
+---
+
 ### `/authorkit.diagram` — Text Block Diagram Creation
 
 Generates text block diagrams in markdown code blocks.

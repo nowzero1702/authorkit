@@ -13,6 +13,7 @@ Kitap yazımındaki tekrarlayan görevleri sistemleştirin: kaynak analizi, el y
 | `init` | Proje başlatma (anket md → kurulum) |
 | `analyze` | Kaynak/el yazması analizi |
 | `compare` | Kaynak ↔ el yazması karşılaştırma |
+| `juice` | Dosyaları Markdown'a dönüştürme (OCR, tablo çıkarma, formül LaTeX, token tasarrufu) |
 | `draft` | Bölüm düzeyinde yazma/düzeltme (eski → yeni) |
 | `diagram` | Metin blok diyagramı oluşturma |
 | `review` | Üslup/terminoloji/yapı doğrulama |
@@ -42,7 +43,7 @@ Bir anket md dosyası oluşturulacaktır. IDE'nizde yanıtları doldurun, ardın
 
 - Kaynaklar: pdf, docx, txt, xlsx, hwpx
 - El yazmaları: pdf, docx, txt, xlsx, hwpx, md
-- Çıktı: md (metin blok diyagramları ile)
+- Çıktı: md (metin blok diyagramları ile), json
 
 ## İş Akışı
 
@@ -52,6 +53,8 @@ Bir anket md dosyası oluşturulacaktır. IDE'nizde yanıtları doldurun, ardın
 /authorkit.analyze       Kaynakları ve el yazmasını analiz et
        ↓
 /authorkit.compare       Kaynak ↔ el yazmasını karşılaştır
+       ↓
+/authorkit.juice         Dosyaları Markdown'a dönüştür (token tasarrufu)
        ↓
 /authorkit.draft         Bölümleri yaz/düzelt (eski → yeni)
        ↓

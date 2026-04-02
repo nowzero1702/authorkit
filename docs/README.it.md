@@ -13,6 +13,7 @@ Sistematizza le attività ripetitive della scrittura di libri: analisi dei rifer
 | `init` | Inizializzazione del progetto (questionario md → configurazione) |
 | `analyze` | Analisi dei riferimenti e del manoscritto |
 | `compare` | Confronto riferimenti ↔ manoscritto |
+| `juice` | Conversione file in Markdown (OCR, estrazione tabelle, formule LaTeX, risparmio di token) |
 | `draft` | Stesura/correzione per sezioni (vecchio → nuovo) |
 | `diagram` | Creazione di diagrammi a blocchi di testo |
 | `review` | Verifica di stile, terminologia e struttura |
@@ -42,7 +43,7 @@ Verrà generato un file md con un questionario. Compila le risposte nel tuo IDE,
 
 - Riferimenti: pdf, docx, txt, xlsx, hwpx
 - Manoscritti: pdf, docx, txt, xlsx, hwpx, md
-- Output: md (con diagrammi a blocchi di testo)
+- Output: md (con diagrammi a blocchi di testo), json
 
 ## Workflow
 
@@ -52,6 +53,8 @@ Verrà generato un file md con un questionario. Compila le risposte nel tuo IDE,
 /authorkit.analyze       Analizzare riferimenti e manoscritto
        ↓
 /authorkit.compare       Confrontare riferimenti ↔ manoscritto
+       ↓
+/authorkit.juice         Convertire file in Markdown (risparmio di token)
        ↓
 /authorkit.draft         Scrivere/correggere sezioni (vecchio → nuovo)
        ↓

@@ -13,6 +13,7 @@
 | `init` | 项目初始化（问卷 md → 设置） |
 | `analyze` | 参考文献/稿件分析 |
 | `compare` | 参考文献 ↔ 稿件对比 |
+| `juice` | 文件转换为 Markdown（OCR、表格提取、公式 LaTeX、节省 token） |
 | `draft` | 章节级撰写/校对（旧 → 新） |
 | `diagram` | 文本框图创建 |
 | `review` | 风格/术语/结构验证 |
@@ -42,7 +43,7 @@
 
 - 参考文献：pdf、docx、txt、xlsx、hwpx
 - 稿件：pdf、docx、txt、xlsx、hwpx、md
-- 输出：md（含文本框图）
+- 输出：md（含文本框图）、json
 
 ## 工作流
 
@@ -52,6 +53,8 @@
 /authorkit.analyze       分析参考文献和稿件
        ↓
 /authorkit.compare       对比参考文献 ↔ 稿件
+       ↓
+/authorkit.juice         文件转换为 Markdown（节省 token）
        ↓
 /authorkit.draft         撰写/校对章节（旧 → 新）
        ↓
